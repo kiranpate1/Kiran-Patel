@@ -1,0 +1,331 @@
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #141216;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.legend {
+  position: absolute;
+  z-index: 1;
+  width: 97%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
+.down {
+  margin-top: 1.5%;
+}
+
+.l1 {
+  fill: rgba(18, 203, 228, 0.74);
+}
+.l2 {
+  fill: rgba(35, 22, 190, 0.74);
+}
+.l3 {
+  fill: rgba(24, 95, 201, 0.74);
+}
+.m1 {
+  fill: rgba(0, 0, 0, 0.5);
+}
+.ltext {
+  fill: white;
+  font-size:12px;
+  font-family:Poppins-Regular, Poppins;
+}
+
+g {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.key g:hover {
+  opacity: 0.3;
+}
+
+
+svg.timeline {
+  z-index: 0;
+  width: 97%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  display: block;
+  cursor: url(""), auto;
+}
+
+
+
+svg.key {
+  z-index: 0;
+  display: block;
+}
+
+.key {font-size: 20px;}
+
+.test {
+    position: absolute;
+    z-index: 1;
+    width: 27.67%;
+    margin-left: 0%;
+}
+
+.stat {
+  font-size: 20px;
+  display: block;
+  font-weight: 500;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.main {
+  font-weight: 700;
+  padding-bottom: 0px;
+}
+
+.grey {
+  color: rgb(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+
+.light {
+  font-weight: 200;
+}
+
+.subtitle {
+  padding-top: 30px;
+  font-weight: 200;
+}
+
+.notop {padding-top: 0px;}
+
+.description {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: -27px;
+}
+
+.yellow {color:yellow;}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 6%;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 1.3%;
+  padding-bottom: 1%;
+}
+
+
+.ttl {
+  grid-template-columns: 1fr;
+}
+
+.subgenre {
+  width: 40px;
+  margin-right: 8px;
+}
+
+.subgenreline {
+  width: 100%;
+  float: left;
+  padding-top: 6px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.none {
+  display: none;
+}
+
+.line-1,.line-2 {
+  opacity: 0.7;
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+line {
+  stroke-dasharray: 2020;
+  stroke-dashoffset: 2020;
+  -webkit-animation: animate 7s forwards;
+  animation: animate 7s forwards;
+}
+
+#line {
+  animation-timing-function: ease-in-out;
+}
+
+.line-1 {
+  stroke-width: 48.35px;
+}
+
+.line-2 {
+  stroke-width: 49.35px;
+}
+
+@keyframes animate {
+	to
+	{stroke-dashoffset: 0;}
+}
+
+.rectangle {
+  float: left;
+  height: 18px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.rectangle:hover {
+  opacity: 0.6;
+  transition: .6s ease;
+}
+
+.arrow {position: absolute;width:20px;margin-right:10px;}
+
+.green {
+  fill:none;
+  stroke:#5aff71;
+  stroke-miterlimit:10;
+  stroke-width:14px;
+}
+.green2 {
+  fill:#5aff71;
+}
+.red {
+  stroke:#ff571d;
+}
+.red2 {
+  fill:#ff571d;
+}
+.space {
+  width: 100%;
+  float: left;
+  padding-top: 24px;
+}
+
+.timeline g {
+  transition: 0.4s;
+}
+
+.timeline g:hover {
+  transform: translateY(8px);
+  transition: 0.4s;
+}
+
+.w-1{fill:#8c424f;}.w-2{fill:#bb5d5d;}.w-3{fill:#ca5764;}.w-4{fill:#a3715c;}.w-5{fill:#a75754;}.w-6{fill:#ad7633;}.w-7{fill:#867c4a;}.w-8{fill:#8f6054;}.w-9{fill:#8d4749;}.w-10{fill:#a76e77;}.w-11{fill:#d06a7b;}.w-12{fill:#8f835c;}.w-13{fill:#a86e49;}.w-14{fill:#975057;}.w-15{fill:#ac575d;}.w-16{fill:#c15452;}.w-17{fill:#9d7863;}.w-18{fill:#a86d54;}.w-19{fill:#997a4d;}.w-20{fill:#855e4a;}.w-21{fill:#9a676b;}.w-22{fill:#aa7573;}.w-23{fill:#a06f6e;}.w-24{fill:#d06e7c;}.w-25{fill:#b95658;}.w-26{fill:#96665b;}.w-27{fill:#a97433;}.w-28{fill:#85443a;}.w-29{fill:#975f5d;}.w-30{fill:#a55c64;}.w-31{fill:#b05d5a;}.w-32{fill:#9d575b;}.w-33{fill:#b96c57;}.w-34{fill:#9e7338;}.w-35{fill:#a85e5f;}.w-36{fill:#b58082;}.w-37{fill:#cc6e78;}.w-38{fill:#aa7065;}.w-39{fill:#c07654;}.w-40{fill:#8a7c4f;}.w-41{fill:#8f5854;}.w-42{fill:#9a5f43;}.w-43{fill:#c40000;}.w-44{fill:#9b88d7;}.w-45{fill:#ffbce5;}.w-46{fill:#460d11;}.w-47{fill:#d4b7ba;}.w-48{fill:#914847;}.w-49{fill:#6840f0;}.w-50{fill:#85aa00;}.w-51{fill:#af7577;}.w-52{fill:#bfa1a5;}.w-53{fill:#946a6f;}.w-54{fill:#ab324c;}.w-55{fill:#aa3c57;}.w-56{fill:#8a4559;}.w-57{fill:#aa596a;}.w-58{fill:#ae5c5d;}.w-59{fill:#7a6858;}.w-60{fill:#b7314a;}.w-61{fill:#88415b;}.w-62{fill:#7f3949;}.w-63{fill:#ab838d;}.w-64{fill:#a27f9b;}.w-65{fill:#846e5a;}.w-66{fill:#8d5472;}.w-67{fill:#8d3c3a;}.w-68{fill:#a04b4c;}.w-69{fill:#a66958;}.w-70{fill:#b68e9c;}.w-71{fill:#876b71;}.w-72{fill:#9e5555;}.w-73{fill:#c12a32;}.w-74{fill:#934e51;}.w-75{fill:#a3686a;}.w-76{fill:#bb7076;}.w-77{fill:#ac7c6e;}.w-78{fill:#b8a0af;}.w-79{fill:#925756;}.w-80{fill:#af3d5b;}.w-81{fill:#8b576c;}.w-82{fill:#a3504d;}.w-83{fill:#a15d5f;}.w-84{fill:#97695c;}.w-85{fill:#a54556;}.w-86{fill:#a85d63;}.w-87{fill:#a84946;}.w-88{fill:#ba5658;}.w-89{fill:#af5263;}.w-90{fill:#9e747a;}.w-91{fill:#b34662;}.w-92{fill:#be90b0;}.w-93{fill:#9d64aa;}.w-94{fill:#796f7e;}.w-95{fill:#92565d;}.w-96{fill:#a45541;}.w-97{fill:#90685a;}.w-98{fill:#a8535a;}.w-99{fill:#ae5a6c;}.w-100{fill:#c17fa2;}.w-101{fill:#97595a;}.w-102{fill:#b6636b;}.w-103{fill:#c17683;}.w-104{fill:#bb6c8b;}.w-105{fill:#ac71a9;}.w-106{fill:#a4341c;}.w-107{fill:#975642;}.w-108{fill:#99634f;}.w-109{fill:#b57f81;}.w-110{fill:#b96c79;}.w-111{fill:#bd6696;}.w-112{fill:#bc7da7;}.w-113{fill:#8d5d64;}.w-114{fill:#a44d35;}.w-115{fill:#925e49;}.w-116{fill:#b35962;}.w-117{fill:#a471b3;}.w-118{fill:#936f95;}.w-119{fill:#a94e39;}.w-120{fill:#9e5c48;}.w-121{fill:#935546;}.w-122{fill:#724f29;}.w-123{fill:#ab8599;}.w-124{fill:#ac4b6a;}.w-125{fill:#bc8b8c;}.w-126{fill:#9b4b37;}.w-127{fill:#00be36;}.w-128{fill:#893f32;}.w-129{fill:#8f5230;}.w-130{fill:#aa3e35;}.w-131{fill:#9b5842;}.w-132{fill:#9c5d4c;}.w-133{fill:#b24a54;}.w-134{fill:#a65c61;}.w-135{fill:#c77374;}.w-136{fill:#914839;}.w-137{fill:#a45143;}.w-138{fill:#a5453c;}.w-139{fill:#a17051;}.w-140{fill:#a13742;}.w-141{fill:#ac4448;}.w-142{fill:#ce727c;}.w-143{fill:#8a5938;}.w-144{fill:#b83f43;}.w-145{fill:#a7574e;}.w-146{fill:#ad4751;}.w-147{fill:#c35b6d;}.w-148{fill:#b34f4c;}.w-149{fill:#a35033;}.w-150{fill:#ba464f;}.w-151{fill:#994a3d;}.w-152{fill:#bd595a;}.w-153{fill:#c56161;}.w-154{fill:#a66250;}.w-155{fill:#b84f45;}.w-156{fill:#975c53;}.w-157{fill:#a34d53;}.w-158{fill:#a0454a;}.w-159{fill:#cd5555;}.w-160{fill:#924f2f;}.w-161{fill:#be241b;}.w-162{fill:#8e5943;}.w-163{fill:#a65948;}.w-164{fill:#b5585d;}.w-165{fill:#c74d53;}.w-166{fill:#ad3c35;}.w-167{fill:#b46072;}.w-168{fill:#fff45c;}.w-169{fill:#8c5251;}.w-170{fill:#bb5e56;}.w-171{fill:#af4d47;}.w-172{fill:#9b5a60;}.w-173{fill:#904b38;}.w-174{fill:#af6064;}.w-175{fill:#c6899e;}.w-176{fill:#924d48;}.w-177{fill:#96585a;}.w-178{fill:#b14b5c;}.w-179{fill:#976876;}.w-180{fill:#c4728b;}.w-181{fill:#997372;}.w-182{fill:#a4696b;}.w-183{fill:#b34c55;}.w-184{fill:#b05f59;}.w-185{fill:#965663;}.w-186{fill:#9c4a45;}.w-187{fill:#956775;}.w-188{fill:#c46471;}.w-189{fill:#8c7873;}.w-190{fill:#9a6362;}.w-191{fill:#b83a44;}.w-192{fill:#a84c45;}.w-193{fill:#9d4a4b;}.w-194{fill:#a16674;}.w-195{fill:#d74b57;}.w-196{fill:#86655c;}.w-197{fill:#a6626f;}.w-198{fill:#a85d45;}.w-199{fill:#994d48;}.w-200{fill:#a84943;}.w-201{fill:#ae6572;}.w-202{fill:#c86575;}.w-203{fill:#bb5b68;}.w-204{fill:#ba4d56;}.w-205{fill:#a8595f;}.w-206{fill:#8d4e3b;}.w-207{fill:#a94d4d;}.w-208{fill:#c07687;}.w-209{fill:#9c797e;}.w-210{fill:#2c2e2e;}.w-211{fill:#cd4556;}.w-212{fill:#be4d48;}.w-213{fill:#b3615c;}.w-214{fill:#977377;}.w-215{fill:#a05545;}.w-216{fill:#8a6353;}.w-217{fill:#90645e;}.w-218{fill:#c16e66;}.w-219{fill:#d63845;}.w-220{fill:#b74b52;}.w-221{fill:#9c6561;}.w-222{fill:#90725c;}.w-223{fill:#ce6d65;}.w-224{fill:#c4605f;}.w-225{fill:#aa7772;}.w-226{fill:#966164;}.w-227{fill:#976f67;}.w-228{fill:#af7072;}.w-229{fill:#c85a4e;}.w-230{fill:#b05e58;}.w-231{fill:#c24b45;}.w-232{fill:#9f6f6a;}.w-233{fill:#a17071;}.w-234{fill:#c18187;}.w-235{fill:#b54938;}.w-236{fill:#9b5d5f;}.w-237{fill:#d2465a;}.w-238{fill:#b44e4c;}.w-239{fill:#a77774;}.w-240{fill:#9c7169;}.w-241{fill:#bc6f71;}.w-242{fill:#b1564e;}.w-243{fill:#b45d76;}.w-244{fill:#bd3848;}.w-245{fill:#896266;}.w-246{fill:#9c5041;}.w-247{fill:#a07566;}.w-248{fill:#8d6761;}.w-249{fill:#cf6f71;}.w-250{fill:#ad564a;}.w-251{fill:#967775;}.w-252{fill:#ad5053;}.w-253{fill:#8d4155;}.w-254{fill:#bb5c5b;}.w-255{fill:#e37557;}.w-256{fill:#bb455d;}.w-257{fill:#bb584f;}.w-258{fill:#be6a54;}.w-259{fill:#b84f60;}.w-260{fill:#a93b4e;}.w-261{fill:#dc4d40;}.w-262{fill:#e06b4e;}.w-263{fill:#d44a5a;}.w-264{fill:#a16f76;}.w-265{fill:#9a4053;}.w-266{fill:#b46860;}.w-267{fill:#cd615b;}.w-268{fill:#b95b53;}.w-269{fill:#ad6e74;}.w-270{fill:#9c4a55;}.w-271{fill:#9d484e;}.w-272{fill:#cc7868;}.w-273{fill:#dc474e;}.w-274{fill:#b46452;}.w-275{fill:#96505b;}.w-276{fill:#a33d3b;}.w-277{fill:#cb6368;}.w-278{fill:#e25a65;}.w-279{fill:#9f4f49;}.w-280{fill:#7c4f6b;}.w-281{fill:#a95052;}.w-282{fill:#cf5a40;}.w-283{fill:#c55051;}.w-284{fill:#c46463;}.w-285{fill:#c53c31;}.w-286{fill:#b1534e;}.w-287{fill:#c45649;}.w-288{fill:#00ae00;}.w-289{fill:#00adff;}.w-290{fill:#8bc266;}.w-291{fill:#cd4953;}.w-292{fill:#c27a84;}.w-293{fill:#c86c81;}.w-294{fill:#aa6151;}.w-295{fill:#dd5f53;}.w-296{fill:#ba7463;}.w-297{fill:#d07555;}.w-298{fill:#c9713e;}.w-299{fill:#c8677a;}.w-300{fill:#c2596a;}.w-301{fill:#ac5b5d;}.w-302{fill:#dd8574;}.w-303{fill:#b76468;}.w-304{fill:#bd4c1f;}.w-305{fill:#ad6155;}.w-306{fill:#ce7a91;}.w-307{fill:#b04d47;}.w-308{fill:#d8776b;}.w-309{fill:#d4bb78;}.w-310{fill:#b85935;}.w-311{fill:#a8745f;}.w-312{fill:#d36687;}.w-313{fill:#c25f5d;}.w-314{fill:#c9655a;}.w-315{fill:#d38f65;}.w-316{fill:#d5763d;}.w-317{fill:#d5704b;}.w-318{fill:#a78062;}.w-319{fill:#cf6682;}.w-320{fill:#bd6d74;}.w-321{fill:#cc6050;}.w-322{fill:#c97b6f;}.w-323{fill:#d9a27c;}.w-324{fill:#e78753;}.w-325{fill:#d56b59;}.w-326{fill:#cc8086;}.w-327{fill:#d56b7f;}.w-328{fill:#bd6752;}.w-329{fill:#cb4d3d;}.w-330{fill:#d07f6a;}.w-331{fill:#ed9a6a;}.w-332{fill:#d6876c;}.w-333{fill:#d69873;}.w-334{fill:#db7d70;}.w-335{fill:#d5a2a8;}.w-336{fill:#e9947f;}.w-337{fill:#b87054;}.w-338{fill:#bb6a60;}.w-339{fill:#b45c3e;}.w-340{fill:#ab2525;}.w-341{fill:#af6261;}.w-342{fill:#d48159;}.w-343{fill:#e2a299;}.w-344{fill:#e38168;}.w-345{fill:#c86450;}.w-346{fill:#bb646e;}.w-347{fill:#ae4f5b;}.w-348{fill:#da9470;}.w-349{fill:#e29a7d;}.w-350{fill:#dd695f;}.w-351{fill:#c25647;}.w-352{fill:#c5696f;}.w-353{fill:#a05652;}.w-354{fill:#af6964;}.w-355{fill:#c79789;}.w-356{fill:#eba19f;}.w-357{fill:#d85648;}.w-358{fill:#cc5b49;}.w-359{fill:#a76c59;}.w-360{fill:#c04c3e;}.w-361{fill:#a45b42;}.w-362{fill:#b45d64;}.w-363{fill:#9f6b68;}.w-364{fill:#eba791;}.w-365{fill:#b3544b;}.w-366{fill:#be6266;}.w-367{fill:#a37666;}.w-368{fill:#ad7057;}.w-369{fill:#b94934;}.w-370{fill:#a7333b;}.w-371{fill:#f0f;}.w-372{fill:#46a300;}.w-373{fill:#ff935a;}.w-374{fill:#b5787d;}.w-375{fill:#87678e;}.w-376{fill:#9a677f;}.w-377{fill:#ab715f;}.w-378{fill:#937459;}.w-379{fill:#a5575c;}.w-380{fill:#994227;}.w-381{fill:#a7341b;}.w-382{fill:#7c5e7d;}.w-383{fill:#90664c;}.w-384{fill:#c53942;}.w-385{fill:#a9482b;}.w-386{fill:#9d7265;}.w-387{fill:#786b92;}.w-388{fill:#ae5565;}.w-389{fill:#ae724d;}.w-390{fill:#8a5843;}.w-391{fill:#89261b;}.w-392{fill:#a95a39;}.w-393{fill:#844d73;}.w-394{fill:#9b6068;}.w-395{fill:#a85f36;}.w-396{fill:#8e6e51;}.w-397{fill:#a6472b;}.w-398{fill:#8f1808;}.w-399{fill:#9c5b3b;}.w-400{fill:#966f7f;}.w-401{fill:#a64154;}.w-402{fill:#ab6744;}.w-403{fill:#a08066;}.w-404{fill:#86642d;}.w-405{fill:#895471;}.w-406{fill:#a55e49;}.w-407{fill:#9f6b66;}.w-408{fill:#a74126;}.w-409{fill:#a34130;}.w-410{fill:#942f2c;}.w-411{fill:#834434;}.w-412{fill:#d1d700;}.w-413{fill:#e1558d;}.w-414{fill:#94782b;}.w-415{fill:#718738;}.w-416{fill:#736b22;}.w-417{fill:#ae623a;}.w-418{fill:#812c25;}.w-419{fill:#6d2a1d;}.w-420{fill:#81392a;}.w-421{fill:#995260;}.w-422{fill:#707138;}.w-423{fill:#844d0d;}.w-424{fill:#b47551;}.w-425{fill:#743c25;}.w-426{fill:#664335;}.w-427{fill:#834d67;}.w-428{fill:#746323;}.w-429{fill:#845c0b;}.w-430{fill:#965e3d;}.w-431{fill:#755445;}.w-432{fill:#83534e;}.w-433{fill:#87527d;}.w-434{fill:#622f45;}.w-435{fill:#87892b;}.w-436{fill:#677423;}.w-437{fill:#925e1d;}.w-438{fill:#884d2c;}.w-439{fill:#764f38;}.w-440{fill:#882b2e;}.w-441{fill:#75423d;}.w-442{fill:#744168;}.w-443{fill:#75415a;}.w-444{fill:#777038;}.w-445{fill:#9f4e1d;}.w-446{fill:#883e2e;}.w-447{fill:#861f1c;}.w-448{fill:#864a56;}.w-449{fill:#7e3a42;}.w-450{fill:#b44f30;}.w-451{fill:#812a2c;}.w-452{fill:#653853;}.w-453{fill:#6e4244;}.w-454{fill:#6c233a;}.w-455{fill:#803521;}.w-456{fill:#802a0d;}.w-457{fill:#6b353d;}.w-458{fill:#763433;}.w-459{fill:#8b382f;}.w-460{fill:#561f33;}.w-461{fill:#5a3428;}.w-462{fill:#8d3c2c;}.w-463{fill:#7b2320;}.w-464{fill:#80383b;}.w-465{fill:#884548;}.w-466{fill:#651618;}.w-467{fill:#782623;}.w-468{fill:#6c1819;}.w-469{fill:#4f1e31;}.w-470{fill:#673326;}.w-471{fill:#793f34;}.w-472{fill:#6e2e21;}.w-473{fill:#7e2b26;}.w-474{fill:#663038;}.w-475{fill:#7b464a;}.w-476{fill:#410d21;}.w-477{fill:#56311f;}.w-478{fill:#834e1c;}.w-479{fill:#88525c;}.w-480{fill:#5f191b;}.w-481{fill:#411c1f;}.w-482{fill:#774f1e;}.w-483{fill:#993952;}.w-484{fill:#7b344d;}.w-485{fill:#824045;}.w-486{fill:#6a311f;}.w-487{fill:#000;}.w-488{fill:#6840ef;}.w-489{fill:#824434;}.w-490{fill:#ffbbe4;}.w-491{fill:#d0d600;}.w-492{fill:#c30000;}.w-493{fill:#604f05;}.w-494{fill:#50303a;}.w-495{fill:#84181e;}.w-496{fill:#ab262b;}.w-497{fill:#933541;}.w-498{fill:#8b413c;}.w-499{fill:#713a4e;}.w-500{fill:#6d3f05;}.w-501{fill:#7a454f;}.w-502{fill:#92292f;}.w-503{fill:#98262b;}.w-504{fill:#743108;}.w-505{fill:#743238;}.w-506{fill:#8b282d;}.w-507{fill:#803541;}.w-508{fill:#7c4d29;}.w-509{fill:#83283b;}.w-510{fill:#63210d;}.w-511{fill:#8b3a47;}.w-512{fill:#7e3242;}.w-513{fill:#7e232f;}.w-514{fill:#76482c;}.w-515{fill:#783c50;}.w-516{fill:#7a1f2d;}.w-517{fill:#7e5f2d;}.w-518{fill:#811b21;}.w-519{fill:#964c55;}.w-520{fill:#68342d;}.w-521{fill:#6f283b;}.w-522{fill:#802c3e;}.w-523{fill:#7e6e2c;}.w-524{fill:#7e423e;}.w-525{fill:#883d29;}.w-526{fill:#dbe2c2;}.w-527{fill:#88303e;}.w-528{fill:#6a3b38;}.w-529{fill:#7e3a35;}.w-530{fill:#6d3b33;}.w-531{fill:#6d3b41;}.w-532{fill:#84475d;}.w-533{fill:#8b5d65;}.w-534{fill:#9f5d4c;}.w-535{fill:#5d2d25;}.w-536{fill:#67282a;}.w-537{fill:#7a4f4b;}.w-538{fill:#944e69;}.w-539{fill:#945152;}.w-540{fill:#6f3e3a;}.w-541{fill:#783233;}.w-542{fill:#84717d;}.w-543{fill:#87383c;}.w-544{fill:#9b505a;}.w-545{fill:#824b5d;}.w-546{fill:#792229;}.w-547{fill:#853b37;}.w-548{fill:#803b41;}.w-549{fill:#93505c;}.w-550{fill:#816775;}.w-551{fill:#95584b;}.w-552{fill:#88505a;}.w-553{fill:#742c32;}.w-554{fill:#722320;}.w-555{fill:#753c35;}.w-556{fill:#824e54;}.w-557{fill:#a95f73;}.w-558{fill:#8e6573;}.w-559{fill:#994a35;}.w-560{fill:#733e48;}.w-561{fill:#763a33;}.w-562{fill:#612c21;}.w-563{fill:#652422;}.w-564{fill:#5f2a22;}.w-565{fill:#904c5c;}.w-566{fill:#8a4b3a;}.w-567{fill:#92454d;}.w-568{fill:#964551;}.w-569{fill:#ff4f19;}.w-570{fill:#9a87d6;}.w-571{fill:#fff35c;}.w-572{fill:#0087ff;}.w-573{fill:#d3b6b9;}.w-574{fill:#a6292f;}.w-575{fill:#a8405a;}.w-576{fill:#8b6f82;}.w-577{fill:#8e6656;}.w-578{fill:#ae8679;}.w-579{fill:#98788f;}.w-580{fill:#736c5b;}.w-581{fill:#72392f;}.w-582{fill:#971d30;}.w-583{fill:#a13e58;}.w-584{fill:#7f6371;}.w-585{fill:#98793d;}.w-586{fill:#b18683;}.w-587{fill:#7a665c;}.w-588{fill:#5d2b1c;}.w-589{fill:#9d2f47;}.w-590{fill:#94405a;}.w-591{fill:#836775;}.w-592{fill:#ad874f;}.w-593{fill:#a17492;}.w-594{fill:#768082;}.w-595{fill:#83564d;}.w-596{fill:#692a1b;}.w-597{fill:#96485e;}.w-598{fill:#9a485d;}.w-599{fill:#7d6278;}.w-600{fill:#9f6e5f;}.w-601{fill:#ab6b84;}.w-602{fill:#767269;}.w-603{fill:#6b6b61;}.w-604{fill:#965864;}.w-605{fill:#782c2d;}.w-606{fill:#962e45;}.w-607{fill:#9b585e;}.w-608{fill:#976b80;}.w-609{fill:#9e7864;}.w-610{fill:#71705e;}.w-611{fill:#7d6151;}.w-612{fill:#90625f;}.w-613{fill:#a53a44;}.w-614{fill:#6d505c;}.w-615{fill:#97667f;}.w-616{fill:#96667c;}.w-617{fill:#746048;}.w-618{fill:#8c888f;}.w-619{fill:#758d74;}.w-620{fill:#966569;}.w-621{fill:#745253;}.w-622{fill:#916175;}.w-623{fill:#8c5969;}.w-624{fill:#aa7b5b;}.w-625{fill:#963c3f;}.w-626{fill:#64452f;}.w-627{fill:#66262c;}.w-628{fill:#876d5b;}.w-629{fill:#9d6c77;}.w-630{fill:#9c6674;}.w-631{fill:#914d6d;}.w-632{fill:#b17d5d;}.w-633{fill:#883732;}.w-634{fill:#956f6e;}.w-635{fill:#ad7b91;}.w-636{fill:#86516a;}.w-637{fill:#7c3834;}.w-638{fill:#714740;}.w-639{fill:#834e4e;}.w-640{fill:#8c6892;}.w-641{fill:#96627f;}.w-642{fill:#976567;}.w-643{fill:#77342f;}.w-644{fill:#8e5268;}.w-645{fill:#5d3c39;}.w-646{fill:#9d6165;}.w-647{fill:#957e6c;}.w-648{fill:#a668a2;}.w-649{fill:#8f5077;}.w-650{fill:#977462;}.w-651{fill:#884335;}.w-652{fill:#884557;}.w-653{fill:#693c46;}.w-654{fill:#897380;}.w-655{fill:#a3728a;}.w-656{fill:#8d4e87;}.w-657{fill:#b06a64;}.w-658{fill:#763a44;}.w-659{fill:#70442e;}.w-660{fill:#64392d;}.w-661{fill:#8ac166;}.w-662{fill:#bddb7a;}.w-663{fill:#904847;}.w-664{fill:#af727b;}.w-665{fill:#c17d8d;}.w-666{fill:#bd718a;}.w-667{fill:#bd86a3;}.w-668{fill:#967587;}.w-669{fill:#9483a9;}.w-670{fill:#c1799a;}.w-671{fill:#9c727b;}.w-672{fill:#a87c76;}.w-673{fill:#af6079;}.w-674{fill:#cd7b9f;}.w-675{fill:#ba8a98;}.w-676{fill:#8c7086;}.w-677{fill:#b884c0;}.w-678{fill:#996a6f;}.w-679{fill:#c2728e;}.w-680{fill:#c76888;}.w-681{fill:#b38da4;}.w-682{fill:#907c95;}.w-683{fill:#cb7188;}.w-684{fill:#bc76aa;}.w-685{fill:#ae7fbe;}.w-686{fill:#b992a1;}.w-687{fill:#8d7585;}.w-688{fill:#c67bab;}.w-689{fill:#b786c0;}.w-690{fill:#b2727d;}.w-691{fill:#b36c86;}.w-692{fill:#a48391;}.w-693{fill:#ab7697;}.w-694{fill:#c18bc1;}.w-695{fill:#b56883;}.w-696{fill:#a86378;}.w-697{fill:#d27f9c;}.w-698{fill:#c46b7d;}.w-699{fill:#ab8191;}.w-700{fill:#9d7c91;}.w-701{fill:#b57196;}.w-702{fill:#c17da8;}.w-703{fill:#857298;}.w-704{fill:#8d596e;}.w-705{fill:#cb8cb5;}.w-706{fill:#ab8aaa;}.w-707{fill:#9e6474;}.w-708{fill:#7b4e6a;}.w-709{fill:#716e8f;}.w-710{fill:#836fa4;}.w-711{fill:#a17081;}.w-712{fill:#b187ba;}.w-713{fill:#a37e96;}.w-714{fill:#9e5d6d;}.w-715{fill:#6c5577;}.w-716{fill:#6d7ca4;}.w-717{fill:#977cac;}.w-718{fill:#a786c6;}.w-719{fill:#bf8abf;}.w-720{fill:#9a7289;}.w-721{fill:#98515d;}.w-722{fill:#7e637e;}.w-723{fill:#5a6486;}.w-724{fill:#8d76aa;}.w-725{fill:#9e7487;}.w-726{fill:#a8749f;}.w-727{fill:#7e81cd;}.w-728{fill:#bb8abb;}.w-729{fill:#916575;}.w-730{fill:#75545a;}.w-731{fill:#786e8e;}.w-732{fill:#7576b1;}.w-733{fill:#8b6f9a;}.w-734{fill:#a18bcb;}.w-735{fill:#8b7fa4;}.w-736{fill:#7f77a5;}.w-737{fill:#a187be;}.w-738{fill:#674249;}.w-739{fill:#785e90;}.w-740{fill:#8974a1;}.w-741{fill:#af8dae;}.w-742{fill:#ab7583;}.w-743{fill:#a47a8a;}.w-744{fill:#08f;}.w-745{fill:#6a5d80;}.w-746{fill:#99608d;}.w-747{fill:#ae6d9d;}.w-748{fill:#8c669a;}.w-749{fill:#8c5b8a;}.w-750{fill:#a286c2;}.w-751{fill:#7c88bd;}.w-752{fill:#8c78b9;}.w-753{fill:#726994;}.w-754{fill:#a3668e;}.w-755{fill:#a66189;}.w-756{fill:#835a86;}.w-757{fill:#7888b8;}.w-758{fill:#8886ce;}.w-759{fill:#8c6e92;}.w-760{fill:#935682;}.w-761{fill:#88699f;}.w-762{fill:#7283bb;}.w-763{fill:#8788b4;}.w-764{fill:#7b99d1;}.w-765{fill:#6263a4;}.w-766{fill:#a26986;}.w-767{fill:#9c6096;}.w-768{fill:#967ab0;}.w-769{fill:#8289ba;}.w-770{fill:#605b8d;}.w-771{fill:#935d87;}.w-772{fill:#ab72a2;}.w-773{fill:#a0609a;}.w-774{fill:#834f76;}.w-775{fill:#828dba;}.w-776{fill:#7c72a4;}.w-777{fill:#8c628f;}.w-778{fill:#b679aa;}.w-779{fill:#a16793;}.w-780{fill:#8c689d;}.w-781{fill:#7c84af;}.w-782{fill:#7d90a3;}.w-783{fill:#a678ac;}.w-784{fill:#9778b0;}.w-785{fill:aqua;}.w-786{fill:#8e85c7;}.w-787{fill:#76a6d4;}.w-788{fill:#5380b0;}.w-789{fill:#5486dd;}.w-790{fill:#bba9dc;}.w-791{fill:#9589bc;}.w-792{fill:#7096ce;}.w-793{fill:#857fb7;}.w-794{fill:#8678b3;}.w-795{fill:#828ca7;}.w-796{fill:#4e78c6;}.w-797{fill:#6d88d6;}.w-798{fill:#ae9dca;}.w-799{fill:#5d84b9;}.w-800{fill:#917db6;}.w-801{fill:#8d9ab9;}.w-802{fill:#607b96;}.w-803{fill:#5484c8;}.w-804{fill:#847cba;}.w-805{fill:#a998cd;}.w-806{fill:#a48aa3;}.w-807{fill:#6d9ed6;}.w-808{fill:#7e97cf;}.w-809{fill:#9e93a2;}.w-810{fill:#728cab;}.w-811{fill:#6875c3;}.w-812{fill:#8c93e2;}.w-813{fill:#9f93cb;}.w-814{fill:#8e8faf;}.w-815{fill:#5694d1;}.w-816{fill:#748ebe;}.w-817{fill:#8d8bcb;}.w-818{fill:#7d9abd;}.w-819{fill:#6887aa;}.w-820{fill:#4175c7;}.w-821{fill:#a1a4de;}.w-822{fill:#8e8ec3;}.w-823{fill:#7a90bb;}.w-824{fill:#6487b2;}.w-825{fill:#7489ce;}.w-826{fill:#588bae;}.w-827{fill:#957eab;}.w-828{fill:#6c95ca;}.w-829{fill:#6d9ad6;}.w-830{fill:#888eb1;}.w-831{fill:#ae90a5;}.w-832{fill:#6e90b3;}.w-833{fill:#7096da;}.w-834{fill:#63abda;}.w-835{fill:#9cbbd2;}.w-836{fill:#8ea3df;}.w-837{fill:#b39dcc;}.w-838{fill:#848ed5;}.w-839{fill:#7e97c0;}.w-840{fill:#6497ce;}.w-841{fill:#7087dc;}.w-842{fill:#749dc4;}.w-843{fill:#8db3cc;}.w-844{fill:#92b5d1;}.w-845{fill:#a1bfcf;}.w-846{fill:#95b3cd;}.w-847{fill:#948ed1;}.w-848{fill:#7f87d8;}.w-849{fill:#9895b8;}.w-850{fill:#718fc8;}.w-851{fill:#60b7e3;}.w-852{fill:#7db4d8;}.w-853{fill:#90b1ca;}.w-854{fill:#9e89be;}.w-855{fill:#8682d0;}.w-856{fill:#8895bc;}.w-857{fill:#7393d7;}.w-858{fill:#6db4dc;}.w-859{fill:#9fc3c9;}.w-860{fill:#a8a1d4;}.w-861{fill:#a88ebf;}.w-862{fill:#948cc1;}.w-863{fill:#6db1dc;}.w-864{fill:#8cc6d6;}.w-865{fill:#b79dd0;}.w-866{fill:#9a93ce;}.w-867{fill:#848ebc;}.w-868{fill:#8183b3;}.w-869{fill:#5f77b4;}.w-870{fill:#8d5f8d;}.w-871{fill:#a87890;}.w-872{fill:#c172b4;}.w-873{fill:#b654a0;}.w-874{fill:#957ebd;}.w-875{fill:#8b5fa6;}.w-876{fill:#7a88bb;}.w-877{fill:#817aab;}.w-878{fill:#ae8799;}.w-879{fill:#be589f;}.w-880{fill:#8580a8;}.w-881{fill:#8c6698;}.w-882{fill:#a57898;}.w-883{fill:#cb65b7;}.w-884{fill:#a762c7;}.w-885{fill:#936fba;}.w-886{fill:#9380a1;}.w-887{fill:#8c8eb4;}.w-888{fill:#6881b6;}.w-889{fill:#7e538e;}.w-890{fill:#9e6182;}.w-891{fill:#c185b1;}.w-892{fill:#846fbe;}.w-893{fill:#85858e;}.w-894{fill:#867c9d;}.w-895{fill:#6579a8;}.w-896{fill:#7e64a7;}.w-897{fill:#a16688;}.w-898{fill:#be60b3;}.w-899{fill:#c164c4;}.w-900{fill:#9580a4;}.w-901{fill:#808ab0;}.w-902{fill:#587aa9;}.w-903{fill:#9a74cb;}.w-904{fill:#9065b1;}.w-905{fill:#9a6ab2;}.w-906{fill:#0059ff;}.w-907{fill:#8b7585;}.w-908{fill:#976f5d;}.w-909{fill:#a46b7a;}.w-910{fill:#a6909a;}.w-911{fill:#a690ac;}.w-912{fill:#b394ba;}.w-913{fill:#be727e;}.w-914{fill:#a37461;}.w-915{fill:#ac778d;}.w-916{fill:#aa847e;}.w-917{fill:#8984ab;}.w-918{fill:#9c8079;}.w-919{fill:#b47b8d;}.w-920{fill:#bca3bf;}.w-921{fill:#ad81a3;}.w-922{fill:#a96f7e;}.w-923{fill:#b1a1aa;}.w-924{fill:#7d7fa7;}.w-925{fill:#916772;}.w-926{fill:#9f6397;}.w-927{fill:#cb9fbb;}.w-928{fill:#a88aa8;}.w-929{fill:#a57d93;}.w-930{fill:#a79ca9;}.w-931{fill:#897ba9;}.w-932{fill:#af7690;}.w-933{fill:#a68cac;}.w-934{fill:#bd99bb;}.w-935{fill:#c18ba5;}.w-936{fill:#a99c9c;}.w-937{fill:#a29f92;}.w-938{fill:#836e98;}.w-939{fill:#9e6c76;}.w-940{fill:#9a707e;}.w-941{fill:#a882a8;}.w-942{fill:#c17a8c;}.w-943{fill:#b3979b;}.w-944{fill:#b998b7;}.w-945{fill:#aca494;}.w-946{fill:#b29693;}.w-947{fill:#bd729c;}.w-948{fill:#9d5f86;}.w-949{fill:#a071b2;}.w-950{fill:#8f5e91;}.w-951{fill:#8a5793;}.w-952{fill:#b5628c;}.w-953{fill:#ac9196;}.w-954{fill:#af5e9e;}.w-955{fill:#9178b0;}.w-956{fill:#825f93;}.w-957{fill:#b6849a;}.w-958{fill:#b35088;}.w-959{fill:#965592;}.w-960{fill:#aa718d;}.w-961{fill:#b87260;}.w-962{fill:#b17cb0;}.w-963{fill:#a7528a;}.w-964{fill:#8d6ca0;}.w-965{fill:#886490;}.w-966{fill:#a6558e;}.w-967{fill:#b48075;}.w-968{fill:#c17f74;}.w-969{fill:#9d4c88;}.w-970{fill:#9260a1;}.w-971{fill:#7b6faa;}.w-972{fill:#996392;}.w-973{fill:#b07f71;}.w-974{fill:#974c6f;}.w-975{fill:#b36a75;}.w-976{fill:#8363ab;}.w-977{fill:#9c68a9;}.w-978{fill:#ad669d;}.w-979{fill:#82819b;}.w-980{fill:#836a8b;}.w-981{fill:#87688e;}.w-982{fill:#7b6da8;}.w-983{fill:#724aab;}.w-984{fill:#5789d9;}.w-985{fill:#6475a0;}.w-986{fill:#716873;}.w-987{fill:#996b84;}.w-988{fill:#706c77;}.w-989{fill:#5579a4;}.w-990{fill:#ad9274;}.w-991{fill:#837989;}.w-992{fill:#936a87;}.w-993{fill:#7074aa;}.w-994{fill:#6855ac;}.w-995{fill:#6b56c2;}.w-996{fill:#4d91db;}.w-997{fill:#5c698c;}.w-998{fill:#495b77;}.w-999{fill:#83678b;}.w-1000{fill:#937d85;}.w-1001{fill:#845493;}.w-1002{fill:#6b64dc;}.w-1003{fill:#4a8bc5;}.w-1004{fill:#5d4a5d;}.w-1005{fill:#936a85;}.w-1006{fill:#5164c5;}.w-1007{fill:#4479ae;}.w-1008{fill:#596283;}.w-1009{fill:#5d4877;}.w-1010{fill:#988a8d;}.w-1011{fill:#9d6c89;}.w-1012{fill:#966290;}.w-1013{fill:#8666a6;}.w-1014{fill:#5777dc;}.w-1015{fill:#5d7eab;}.w-1016{fill:#5177c2;}.w-1017{fill:#6183c1;}.w-1018{fill:#6d4f83;}.w-1019{fill:#884a71;}.w-1020{fill:#89577d;}.w-1021{fill:#6a3b66;}.w-1022{fill:#794273;}.w-1023{fill:#c26980;}.w-1024{fill:#956080;}.w-1025{fill:#8b5e8d;}.w-1026{fill:#64385f;}.w-1027{fill:#7b6ba1;}.w-1028{fill:#7a4b7e;}.w-1029{fill:#a775a3;}.w-1030{fill:#b25189;}.w-1031{fill:#864171;}.w-1032{fill:#7a5170;}.w-1033{fill:#95638e;}.w-1034{fill:#a46f8d;}.w-1035{fill:#8c6797;}.w-1036{fill:#984c8c;}.w-1037{fill:#856184;}.w-1038{fill:#885384;}.w-1039{fill:#8c456e;}.w-1040{fill:#a85a77;}.w-1041{fill:#7e5175;}.w-1042{fill:#775585;}.w-1043{fill:#6f527f;}.w-1044{fill:#78546c;}.w-1045{fill:#824e87;}.w-1046{fill:#a5475e;}.w-1047{fill:#ab6071;}.w-1048{fill:#7c528e;}.w-1049{fill:#7f527b;}.w-1050{fill:#b4586f;}.w-1051{fill:#99536a;}.w-1052{fill:#b681a2;}.w-1053{fill:#8b5b7e;}.w-1054{fill:#8b6978;}.w-1055{fill:#8f4b53;}.w-1056{fill:#65363e;}.w-1057{fill:#632b35;}.w-1058{fill:#6b3748;}.w-1059{fill:#5c2a33;}.w-1060{fill:#985b6c;}.w-1061{fill:#8b5d76;}.w-1062{fill:#8f5c6c;}.w-1063{fill:#8b5968;}.w-1064{fill:#854651;}.w-1065{fill:#a55e78;}.w-1066{fill:#754a55;}.w-1067{fill:#835767;}.w-1068{fill:#72384a;}.w-1069{fill:#723241;}.w-1070{fill:#5f384a;}.w-1071{fill:#985f7a;}.w-1072{fill:#9e6477;}.w-1073{fill:#97698e;}.w-1074{fill:#7c393e;}.w-1075{fill:#89383c;}.w-1076{fill:#72343c;}.w-1077{fill:#a2647b;}.w-1078{fill:#976d8e;}.w-1079{fill:#75383c;}.w-1080{fill:#823b49;}.w-1081{fill:#42171c;}.w-1082{fill:#6d3b4d;}.w-1083{fill:#c387a1;}.w-1084{fill:#855b79;}.w-1085{fill:#69393e;}.w-1086{fill:#6b333a;}.w-1087{fill:#592633;}.w-1088{fill:#573748;}.w-1089{fill:#562c36;}.w-1090{fill:#bfb39e;}.w-1091{fill:#c07d98;}.w-1092{fill:#ba6674;}.w-1093{fill:#d37381;}.w-1094{fill:#bd585e;}.w-1095{fill:#eb9ca0;}.w-1096{fill:#cb7474;}.w-1097{fill:red;}.w-1098{fill:#c989ac;}.w-1099{fill:#b36472;}.w-1100{fill:#cc879a;}.w-1101{fill:#b15a60;}.w-1102{fill:#d37874;}.w-1103{fill:#b982a0;}.w-1104{fill:#cd7b97;}.w-1105{fill:#c67483;}.w-1106{fill:#d67d8a;}.w-1107{fill:#b15f52;}.w-1108{fill:#d77978;}.w-1109{fill:#b27171;}.w-1110{fill:#b1768c;}.w-1111{fill:#ab6678;}.w-1112{fill:#c0616c;}.w-1113{fill:#cc7889;}.w-1114{fill:#d6827c;}.w-1115{fill:#ca6a7a;}.w-1116{fill:#b96674;}.w-1117{fill:#d98b8b;}.w-1118{fill:#a96d6b;}.w-1119{fill:#e58a89;}.w-1120{fill:#da7f73;}.w-1121{fill:#c88091;}.w-1122{fill:#bb7021;}
+
+@media only screen and (max-width: 800px) {
+  .tline {
+  }
+}
+
+
+.reggae{background-color:#6840f0;}
+.world{background-color:#d6c5a6;}
+.latin{background-color:#fff45c;}
+.calypso{background-color:#e9ffc0;}
+
+.country{background-color:#ff4f19;}
+.countrypop{background-color:#ff935a;}
+.countryrap{background-color:#bb7021;}
+.countryrock{background-color:#c7a418;}
+.folk{background-color:#d7cd8e;}
+.gospel{background-color:#dce3c3;}
+.tango{background-color:#eeffeb;}
+
+.pop{background-color:#ffbce5;}
+.synth{background-color:#9b88d7;}
+.indie{background-color:#848ebc;}
+.disco{background-color:#ff00ff;}
+.poprap{background-color:#e1558d;}
+.poprock{background-color:#d4b7ba;}
+
+.rnb{background-color:#c40000;}
+.doowop{background-color:#914847;}
+.hiphop{background-color:#460d11;}
+.trap{background-color:#000000;box-sizing: border-box;border: 1px solid white;}
+.regional{background-color:#2c2e2e;}
+.althop{background-color:#834434;}
+.funk{background-color:#ad669d;}
+.blues{background-color:#99953a;}
+.soulvar{background-color:#c5c034;}
+.soul{background-color:#d1d700;}
+.jazz{background-color:#c0e407;}
+
+.rock{background-color:#00bd00;}
+.metal{background-color:#00ae00;}
+.grunge{background-color:#46a300;}
+.altrock{background-color:#8bc266;}
+.rocknroll{background-color:#2fe700;}
+.rockfunk{background-color:#809700;}
+.punk{background-color:#a7bc00;}
+.folkrock{background-color:#bedc7a;}
+.electrorock{background-color:#6adbdd;}
+
+.electronic{background-color:#0088ff;}
+.dubstep{background-color:#0059ff;}
+.house{background-color:#00adff;}
+.eurodance{background-color:#00ffff;}
+
+.artists {
+  width: 100%;
+  display: none;
+}
+.songsect {
+  width:100%;
+}
+@media (max-width: 1050px) {
+  .songsect, .subgenreline, #description_ {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .stat {
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .songsect, .subgenreline, #description_ {
+    font-size: 8px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .stat {
+    font-size: 12px;
+  }
+}
+.songinfo {
+  float: right;
+  width: 81%;
+}
+.songinfo2 {
+  padding-left: 5%;
+  padding-top: 2%;
+}
+.songs {
+  width: 19%;
+  height: 19%;
+}
